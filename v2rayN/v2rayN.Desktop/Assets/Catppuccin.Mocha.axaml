@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <!-- Catppuccin — Mocha (tokens) -->
+  <Color x:Key="cp_rosewater">#F5E0DC</Color>
+  <Color x:Key="cp_flamingo">#F2CDCD</Color>
+  <Color x:Key="cp_pink">#F5C2E7</Color>
+  <Color x:Key="cp_mauve">#CBA6F7</Color>
+  <Color x:Key="cp_red">#F38BA8</Color>
+  <Color x:Key="cp_maroon">#EBA0AC</Color>
+  <Color x:Key="cp_peach">#FAB387</Color>
+  <Color x:Key="cp_yellow">#F9E2AF</Color>
+  <Color x:Key="cp_green">#A6E3A1</Color>
+  <Color x:Key="cp_teal">#94E2D5</Color>
+  <Color x:Key="cp_sky">#89DCEB</Color>
+  <Color x:Key="cp_sapphire">#74C7EC</Color>
+  <Color x:Key="cp_blue">#89B4FA</Color>
+  <Color x:Key="cp_lavender">#B4BEFE</Color>
+
+  <!-- backgrounds / surfaces -->
+  <Color x:Key="cp_base">#1E1E2E</Color>
+  <Color x:Key="cp_mantle">#181825</Color>
+  <Color x:Key="cp_crust">#11111B</Color>
+
+  <!-- text -->
+  <Color x:Key="cp_text">#CAD3F5</Color>
+  <Color x:Key="cp_subtext">#A6ADC8</Color>
+
+  <!-- brushes used by app -->
+  <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource cp_base}" />
+  <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{StaticResource cp_base}" />
+  <SolidColorBrush x:Key="SurfaceBrush" Color="{StaticResource cp_mantle}" />
+  <SolidColorBrush x:Key="CardBackgroundBrush" Color="{StaticResource cp_mantle}" />
+  <SolidColorBrush x:Key="BorderBrush" Color="{StaticResource cp_crust}" />
+
+  <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource cp_mauve}" />
+  <SolidColorBrush x:Key="PrimaryLightBrush" Color="{StaticResource cp_lavender}" />
+  <SolidColorBrush x:Key="PrimaryDarkBrush" Color="{StaticResource cp_pink}" />
+
+  <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource cp_peach}" />
+  <SolidColorBrush x:Key="SuccessBrush" Color="{StaticResource cp_green}" />
+  <SolidColorBrush x:Key="WarningBrush" Color="{StaticResource cp_yellow}" />
+  <SolidColorBrush x:Key="ErrorBrush" Color="{StaticResource cp_red}" />
+
+  <SolidColorBrush x:Key="TextPrimaryBrush" Color="{StaticResource cp_text}" />
+  <SolidColorBrush x:Key="TextSecondaryBrush" Color="{StaticResource cp_subtext}" />
+
+  <!-- Common keys used in project (fallbacks). -->
+  <SolidColorBrush x:Key="ButtonDefaultTertiaryForeground" Color="{StaticResource cp_subtext}" />
+  <SolidColorBrush x:Key="MaterialDesign.Brush.Primary.Light" Color="{StaticResource cp_lavender}" />
+  <SolidColorBrush x:Key="MaterialDesign.Brush.Primary" Color="{StaticResource cp_mauve}" />
+  <SolidColorBrush x:Key="MaterialDesign.Brush.Primary.Dark" Color="{StaticResource cp_pink}" />
+
+  <!-- Toggle / card border sample -->
+  <Style Selector="Border[class='CardBorder']">
+    <Setter Property="Background" Value="{StaticResource CardBackgroundBrush}" />
+    <Setter Property="BorderBrush" Value="{StaticResource BorderBrush}" />
+  </Style>
+
+  <!-- Buttons -->
+  <Style Selector="Button">
+    <Setter Property="Background" Value="{StaticResource PrimaryBrush}" />
+    <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}" />
+  </Style>
+
+  <!-- TextBlocks default -->
+  <Style Selector="TextBlock">
+    <Setter Property="Foreground" Value="{StaticResource TextPrimaryBrush}" />
+  </Style>
+
+</ResourceDictionary>
